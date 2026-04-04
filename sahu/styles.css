@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+}
+
+header {
+  background: #2c7a7b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+h4{
+  font-weight: bold;
+text-decoration: underline;
+}
+
+img {
+  width: 150px;
+  height: auto;
+  border-radius: 0;
+} tamaño de imagen
+  .caja {
+  display: flex;
+  justify-content: center;
+} para centrar imagen en caja, div
+nav {
+  text-align: center;
+  margin: 15px;
+}
+.producto {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.caja {
+  background-image: url("img/borde.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 30px;
+}
+button {
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  background: #2c7a7b;
+  color: white;
+  cursor: pointer;
+}
+
+#catalogo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.producto {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #333;
+  color: white;
+}
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: white;
+}
+
+.wsp-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.wsp-link img {
+  width: 30px;
+}
