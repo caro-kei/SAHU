@@ -87,6 +87,63 @@ button {
   border-radius: 10px;
   text-align: center;
 }
+.instagram-gallery {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.instagram-gallery h2 a {
+    color: #E1306C; /* Color característico de Instagram */
+    text-decoration: none;
+}
+
+.grid-instagram {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.insta-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    aspect-ratio: 1 / 1; /* Las hace cuadradas perfectas */
+}
+
+.insta-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+.insta-item:hover img {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: white;
+    font-weight: bold;
+}
+
+.insta-item:hover .overlay {
+    opacity: 1;
+}
 
 footer {
   text-align: center;
